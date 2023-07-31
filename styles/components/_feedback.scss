@@ -1,0 +1,200 @@
+@import "../variables";
+
+.feedback {
+  max-width: 900px;
+  background-color: $gray;
+  border-radius: 20px;
+  padding: 50px;
+  margin: 0 auto;
+  h2 {
+    font-size: 28px;
+    font-weight: 500;
+    line-height: 42px;
+    letter-spacing: 0.02em;
+    text-align: left;
+    color: $black;
+  }
+  .buttons {
+    display: flex;
+    margin-top: 20px;
+    flex-wrap: wrap;
+    button {
+      cursor: pointer;
+
+      color: $black;
+      padding: 0 40px;
+      height: 35px;
+      border-radius: 10px;
+      margin-right: 10px;
+      background: none;
+      border: 1px solid #2d2d2d1a;
+
+      font-size: 12px;
+      font-weight: 400;
+      line-height: 18px;
+      letter-spacing: 0.02em;
+    }
+    .active {
+      border: 1px solid $blue;
+      color: $blue;
+    }
+  }
+  form {
+    display: flex;
+    margin-top: 20px;
+    // align-items: center;
+    .rules {
+      display: none;
+    }
+    .inputs {
+      div {
+        display: flex;
+        input {
+          height: 45px;
+          border-radius: 2px;
+          padding-left: 25px;
+          border: none;
+          margin-right: 30px;
+          &::placeholder {
+            font-family: Open Sans;
+            font-size: 12px;
+            font-weight: 400;
+            line-height: 18px;
+            letter-spacing: 0.02em;
+            text-align: left;
+            color: #2d2d2d4d;
+          }
+        }
+        .name {
+          width: 183px;
+        }
+        .phone {
+          width: 352px;
+        }
+      }
+      .checkbox {
+        margin-top: 20px;
+        display: flex;
+        align-items: center;
+
+        input {
+          width: 23px;
+          height: 23px;
+          border: none;
+          cursor: pointer;
+        }
+        label {
+          font-size: 14px;
+          font-weight: 400;
+          line-height: 21px;
+          letter-spacing: 0.02em;
+          text-align: left;
+          color: #989898;
+          span {
+            text-decoration: underline;
+            color: #989898;
+            cursor: pointer;
+          }
+        }
+      }
+    }
+  }
+  @media (max-width: 900px) {
+    form {
+      justify-content: space-between;
+      align-items: center;
+
+      .inputs {
+        div {
+          display: block;
+          input {
+            margin-right: 0px;
+          }
+          .name {
+            width: 100%;
+          }
+          .phone {
+            width: 100%;
+
+            margin-top: 10px;
+          }
+        }
+        .checkbox {
+          input {
+            margin-right: 10px;
+          }
+        }
+      }
+    }
+  }
+  @media (max-width: 817px) {
+    .buttons {
+      margin-top: 10px;
+      button {
+        margin-top: 10px;
+      }
+    }
+  }
+  @media (max-width: 580px) {
+    h2 {
+      font-size: 18px;
+      line-height: 27px;
+    }
+    form {
+      margin: 0 auto;
+      margin-top: 10px;
+      flex-direction: column;
+      button {
+        width: 100%;
+        font-size: 12px;
+      }
+
+      .rules {
+        display: block;
+        margin-top: 10px;
+        font-size: 12px;
+        font-weight: 400;
+        line-height: 18px;
+        letter-spacing: 0.02em;
+        text-align: left;
+        color: #989898;
+
+        span {
+          text-decoration: underline;
+          color: #989898;
+          cursor: pointer;
+        }
+      }
+      .inputs {
+        margin-bottom: 10px;
+        width: 100%;
+        .checkbox {
+          display: none;
+        }
+        .name {
+          width: 100%;
+        }
+        .phone {
+          width: 100%;
+        }
+      }
+    }
+    padding: 20px 10px;
+    .buttons {
+      margin-top: 0px;
+      justify-content: space-between;
+      button {
+        margin-right: 0;
+
+        margin-top: 10px;
+      }
+    }
+  }
+  @media (max-width: 522px) {
+    .buttons {
+      button {
+        padding: 0 10px;
+      }
+    }
+  }
+}

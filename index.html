@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" href="./favicon.ico" />
+    <link rel="stylesheet" href="/styles/main.css" />
+    <link rel="stylesheet" href="/styles/libs/flickity.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <title>k-telecom</title>
+  </head>
+  <body>
+    <div class="page">
+      <header class="header">
+        <img class="logo" src="img/logo.png" alt="logo" />
+        <img class="menu" src="img/menu.svg" alt="menu hamburger" />
+      </header>
+      <main class="content">
+        <section class="banner">
+          <div class="content">
+            <div class="info">
+              <h1>Экономия нервов и денег — интернет К-Телеком</h1>
+              <ul>
+                <li>5 тарифов для многоквартирных и 4 для частных домов</li>
+                <li>безлимит подключенных устройств</li>
+                <li>комфортная поддержка 24/7</li>
+              </ul>
+              <a href="#"><button class="button pink">Подробнее</button></a>
+              
+            </div>
+            <img src="img/banner.png" alt="banner" />
+          </div>
+        </section>
+        <section class="plans">
+          <h2>Тарифные планы</h2>
+          <div class="items">
+            <div class="plan__block">
+              <div class="info">
+                <h2>Мой клик</h2>
+                <p class="speed">Скорость интернета</p>
+                <span>до 40 Мбит/с</span>
+                <p class="describe">Отличный вариант для пенсионеров, выполнения определенных задач и работе с файлами различных размеров.</p>
+                <form>
+                  <input type="checkbox" class="checkbox"></input>
+                  <label>ТВ + 100 ₽ (пакет “Базовый”)</label>
+                </form>
+                <p class="price">
+                  399 ₽<span>в месяц</span>
+                </p>
+                <p class="notice">
+                  *итоговая цена зависит от варианта оплаты и пакета ТВ при
+                  необходимости
+                </p>
+              </div>
+        
+             
+              <button               class="button pink plans__item_button" 
+              >                Выбрать тариф
+              </button>
+            </div>
+            <div class="plan__block">
+              <div class="info">
+                <h2>Резвый клик</h2>
+                <p class="speed">Скорость интернета</p>
+                <span>80-100 Мбит/с</span>
+                <p class="describe">Отличный вариант для всей семьи. Общайтесь в соцсетях и смотрите любимые фильмы и сериалы!</p>
+                <form>
+                  <input type="checkbox" class="checkbox"></input>
+                  <label>ТВ + 100 ₽ (пакет “Базовый”)</label>
+                </form>
+                <p class="price">
+                  449 ₽<span>в месяц</span>
+                </p>
+                <p class="notice">
+                  *итоговая цена зависит от варианта оплаты и пакета ТВ при
+                  необходимости
+                </p>
+              </div>
+        
+             
+              <button
+              class="plans__item_button button pink" 
+              >
+                Выбрать тариф
+              </button>
+            </div>
+            <div class="plan__block">
+              <div class="info">
+                <h2>Мой клик</h2>
+                <p class="speed">Скорость интернета</p>
+                <span>до 40 Мбит/с</span>
+                <p class="describe">Отличный вариант для пенсионеров, выполнения определенных задач и работе с файлами различных размеров.</p>
+                <form>
+                  <input type="checkbox" class="checkbox"></input>
+                  <label>ТВ + 100 ₽ (пакет “Базовый”)</label>
+                </form>
+                <p class="price">
+                  449 ₽<span>в месяц</span>
+                </p>
+                <p class="notice">
+                  *итоговая цена зависит от варианта оплаты и пакета ТВ при
+                  необходимости
+                </p>
+              </div>          
+              <button
+              class="plans__item_button button pink"
+              >                Выбрать тариф
+              </button>
+            </div>
+
+
+
+
+
+
+          </div>
+        </section>
+        <section class="feedback">
+          <h2>Подключиться просто!</h2>
+          <div class="buttons">
+            <button class="feedback_selector">Интернет</button>
+            <button class="feedback_selector">Интернет + ТВ</button>
+            <button class="feedback_selector">Телефония</button>
+            <button class="feedback_selector">Видеонаблюдение</button>
+          </div>
+          <form >
+            <div class="inputs">
+              <div>
+                <input
+                  class="name"
+                  placeholder="Имя"
+                  type="text"
+                  id="name"
+                  name="name"
+                  required
+                />
+                <input
+                  class="phone"
+                  placeholder="Номер Телефона"
+                  type="text"
+                  id="phone"
+                  name="phone"
+                  required
+                />
+              </div>
+              <div class="checkbox">
+                <input
+                  type="checkbox"
+                  id="agreementChecked"
+                  name="agreementChecked"
+                  required
+                />
+                <label htmlFor="agreementChecked">
+                  Я соглашаюсь на условия <span>обработки данных</span>
+                </label>
+              </div>
+            </div>
+      
+          
+            <button
+              type="submit"
+              class="button pink"
+            >
+Отправить            </button>
+            <p class="rules">
+              Нажимая кнопку “Отправить” вы соглашаетесь на условия
+              <span>обработки данных</span>
+            </p>
+          </form>
+        </section>
+      </main>
+      <footer class="footer">
+        <div class="logo">
+          <img src="img/logo.png" alt="logo" />
+    <p>© 2018–2022 ООО «К-Телеком»</p>
+          </div>
+          <div class="social-media">
+            <img src="img/1.svg" alt="instagram" />
+            <img src="img/Ellipse 20.svg" alt="youtube" />
+            <img src="img/3.svg" alt="vk" />
+    
+          </div>
+      </footer>
+    </div>
+    <script src="/scripts/flickity.pkgd.min.js"></script>
+
+    <script src="/scripts/index.js"></script>
+  </body>
+</html>

@@ -1,0 +1,196 @@
+@import "../variables";
+
+.plans {
+  padding: 52px 0 52px 45px;
+
+  h2 {
+    font-size: 28px;
+    font-weight: 500;
+    line-height: 42px;
+    letter-spacing: 0.02em;
+    text-align: left;
+    color: $black;
+  }
+  .items {
+    .is-selected {
+      margin-left: 5px;
+    }
+
+    padding: 33px 0 45px;
+    .plan__block {
+      margin-bottom: 20px;
+      box-sizing: border-box;
+      cursor: grab;
+      background: white;
+      margin-right: 30px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 30px;
+      width: 350px;
+      border-radius: 10px;
+      box-shadow: 0px 5px 8px 0px rgba(34, 60, 80, 0.2);
+      button {
+        width: 287px;
+      }
+      .info {
+        margin-bottom: 20px;
+        h2 {
+          font-size: 20px;
+          font-weight: 500;
+          line-height: 30px;
+          letter-spacing: 0.02em;
+          text-align: left;
+        }
+        .speed {
+          font-family: Open Sans;
+          font-size: 14px;
+          font-weight: 400;
+          line-height: 21px;
+          letter-spacing: 0.02em;
+          text-align: left;
+          color: #acacac;
+        }
+        span {
+          opacity: 1;
+          font-size: 25px;
+          font-weight: 500;
+          line-height: 38px;
+          letter-spacing: 0.02em;
+          text-align: left;
+          color: $pink;
+        }
+        .describe {
+          font-family: Open Sans;
+          font-size: 13px;
+          font-weight: 400;
+          line-height: 20px;
+          letter-spacing: 0.02em;
+          text-align: left;
+          color: #555555;
+        }
+        form {
+          margin-top: 24px;
+          display: flex;
+          align-items: flex-start;
+          input {
+            margin-right: 10px;
+            width: 23px;
+            height: 23px;
+            cursor: pointer;
+          }
+          label {
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 21px;
+            letter-spacing: 0.02em;
+            text-align: left;
+            max-width: 127px;
+          }
+        }
+        .price {
+          font-size: 40px;
+          font-weight: 700;
+          line-height: 60px;
+          letter-spacing: 0.02em;
+          text-align: left;
+          display: flex;
+          align-items: center;
+
+          span {
+            margin-left: 10px;
+            font-family: Open Sans;
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 24px;
+            letter-spacing: 0.02em;
+            text-align: left;
+            color: #55555580;
+          }
+        }
+        .notice {
+          font-family: Open Sans;
+          font-size: 12px;
+          font-weight: 400;
+          line-height: 18px;
+          letter-spacing: 0.02em;
+          text-align: left;
+          color: #55555580;
+        }
+      }
+    }
+    .plan__block.is-selected {
+      opacity: 1;
+    }
+  }
+  .items :nth-child(3) {
+    opacity: 0.3;
+  }
+  @media (max-width: 768px) {
+    .items :nth-child(3) {
+      opacity: 1;
+    }
+  }
+  @media (max-width: 500px) {
+    padding: 20px 0 20px 10px;
+    h2 {
+      font-size: 18px;
+      line-height: 27px;
+    }
+    .items {
+      .plan__block {
+        max-width: 204px;
+        padding: 20px;
+        margin-right: 10px;
+        button {
+          width: 150px;
+          font-size: 12px;
+        }
+        .info {
+          margin-bottom: 10px;
+          h2 {
+            font-size: 16px;
+            line-height: 24px;
+          }
+          .speed {
+            font-size: 10px;
+            line-height: 15px;
+          }
+          span {
+            font-size: 18px;
+            line-height: 27px;
+          }
+          .describe {
+            font-size: 12px;
+            line-height: 18px;
+          }
+          form {
+            margin-top: 10px;
+
+            label {
+              font-size: 12px;
+              line-height: 18px;
+
+              // max-width: 127px;
+            }
+          }
+          .price {
+            font-size: 25px;
+            line-height: 37.5px;
+            display: flex;
+            align-items: center;
+
+            span {
+              font-size: 14px;
+              line-height: 21px;
+            }
+          }
+          .notice {
+            font-size: 10px;
+            line-height: 15px;
+          }
+        }
+      }
+    }
+  }
+}
