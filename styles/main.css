@@ -51,10 +51,10 @@ a {
   display: flex;
   justify-content: space-between;
 }
-.header .header__logo {
+.header .logo {
   height: 36px;
 }
-.header .header__menu {
+.header .menu {
   display: none;
   cursor: pointer;
 }
@@ -62,7 +62,7 @@ a {
   .header {
     padding: 15px 30px;
   }
-  .header .header__menu {
+  .header .menu {
     display: block;
   }
 }
@@ -429,24 +429,24 @@ a {
   border: 1px solid #0099c8;
   color: #0099c8;
 }
-.feedback form {
+.feedback .feedback-form {
   display: flex;
   margin-top: 20px;
 }
-.feedback form .rules {
+.feedback .feedback-form .rules {
   display: none;
 }
-.feedback form .inputs div {
+.feedback .feedback-form .feedback-form__inputs div {
   display: flex;
 }
-.feedback form .inputs div input {
+.feedback .feedback-form .feedback-form__inputs div input {
   height: 45px;
   border-radius: 2px;
   padding-left: 25px;
   border: none;
   margin-right: 30px;
 }
-.feedback form .inputs div input::-moz-placeholder {
+.feedback .feedback-form .feedback-form__inputs div input::-moz-placeholder {
   font-family: Open Sans;
   font-size: 12px;
   font-weight: 400;
@@ -455,7 +455,7 @@ a {
   text-align: left;
   color: rgba(45, 45, 45, 0.3019607843);
 }
-.feedback form .inputs div input::placeholder {
+.feedback .feedback-form .feedback-form__inputs div input::placeholder {
   font-family: Open Sans;
   font-size: 12px;
   font-weight: 400;
@@ -464,24 +464,24 @@ a {
   text-align: left;
   color: rgba(45, 45, 45, 0.3019607843);
 }
-.feedback form .inputs div .name {
+.feedback .feedback-form .feedback-form__inputs div .name {
   width: 183px;
 }
-.feedback form .inputs div .phone {
+.feedback .feedback-form .feedback-form__inputs div .phone {
   width: 352px;
 }
-.feedback form .inputs .checkbox {
+.feedback .feedback-form .feedback-form__inputs .checkbox__container {
   margin-top: 20px;
   display: flex;
   align-items: center;
 }
-.feedback form .inputs .checkbox input {
+.feedback .feedback-form .feedback-form__inputs .checkbox__container .checkbox__input {
   width: 23px;
   height: 23px;
   border: none;
   cursor: pointer;
 }
-.feedback form .inputs .checkbox label {
+.feedback .feedback-form .feedback-form__inputs .checkbox__container label {
   font-size: 14px;
   font-weight: 400;
   line-height: 21px;
@@ -489,30 +489,30 @@ a {
   text-align: left;
   color: #989898;
 }
-.feedback form .inputs .checkbox label span {
+.feedback .feedback-form .feedback-form__inputs .checkbox__container label span {
   text-decoration: underline;
   color: #989898;
   cursor: pointer;
 }
 @media (max-width: 900px) {
-  .feedback form {
+  .feedback .feedback-form {
     justify-content: space-between;
     align-items: center;
   }
-  .feedback form .inputs div {
+  .feedback .feedback-form .feedback-form__inputs div {
     display: block;
   }
-  .feedback form .inputs div input {
+  .feedback .feedback-form .feedback-form__inputs div input {
     margin-right: 0px;
   }
-  .feedback form .inputs div .name {
+  .feedback .feedback-form .feedback-form__inputs div .name {
     width: 100%;
   }
-  .feedback form .inputs div .phone {
+  .feedback .feedback-form .feedback-form__inputs div .phone {
     width: 100%;
     margin-top: 10px;
   }
-  .feedback form .inputs .checkbox input {
+  .feedback .feedback-form .feedback-form__inputs .checkbox__container .checkbox__input {
     margin-right: 10px;
   }
 }
@@ -532,16 +532,16 @@ a {
     font-size: 18px;
     line-height: 27px;
   }
-  .feedback form {
+  .feedback .feedback-form {
     margin: 0 auto;
     margin-top: 10px;
     flex-direction: column;
   }
-  .feedback form button {
+  .feedback .feedback-form button {
     width: 100%;
     font-size: 12px;
   }
-  .feedback form .rules {
+  .feedback .feedback-form .rules {
     display: block;
     margin-top: 10px;
     font-size: 12px;
@@ -551,22 +551,22 @@ a {
     text-align: left;
     color: #989898;
   }
-  .feedback form .rules span {
+  .feedback .feedback-form .rules span {
     text-decoration: underline;
     color: #989898;
     cursor: pointer;
   }
-  .feedback form .inputs {
+  .feedback .feedback-form .feedback-form__inputs {
     margin-bottom: 10px;
     width: 100%;
   }
-  .feedback form .inputs .checkbox {
+  .feedback .feedback-form .feedback-form__inputs .checkbox__container {
     display: none;
   }
-  .feedback form .inputs .name {
+  .feedback .feedback-form .feedback-form__inputs .name {
     width: 100%;
   }
-  .feedback form .inputs .phone {
+  .feedback .feedback-form .feedback-form__inputs .phone {
     width: 100%;
   }
   .feedback .buttons {

@@ -126,8 +126,8 @@
             <button class="feedback_selector">Телефония</button>
             <button class="feedback_selector">Видеонаблюдение</button>
           </div>
-          <form >
-            <div class="inputs">
+          <form class="feedback-form" >
+            <div class="feedback-form__inputs">
               <div>
                 <input
                   class="name"
@@ -146,8 +146,9 @@
                   required
                 />
               </div>
-              <div class="checkbox">
+              <div class="checkbox__container">
                 <input
+                class="checkbox__input"
                   type="checkbox"
                   id="agreementChecked"
                   name="agreementChecked"
@@ -163,6 +164,7 @@
             <button
               type="submit"
               class="button pink"
+              id="submitButton"
             >
 Отправить            </button>
             <p class="rules">
